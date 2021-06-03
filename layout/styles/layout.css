@@ -483,3 +483,109 @@ table a, #comments a{background-color:inherit;}
 	#pageintro article, #pageintro p:first-of-type{max-width:none; width:100%;}
 	#pageintro .heading{font-size:1.6rem;}
 }
+/*card flip*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Bangers');
+*,*::before,*::after{
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* height:100%;
+html,body{
+  width:100%;
+}
+ 
+cfd{
+  font-size:5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Bangers', cursive;
+}
+
+.card{
+  height:15rem;
+  width:15rem;
+  transform-style:preserve-3d;
+  position: relative;
+  transition: all 1s ease-in-out;
+  backface-visibility: hidden;
+  margin:10px;
+}
+
+.front, .back{
+  position: absolute;
+  backface-visibility: hidden;
+  background-image: linear-gradient(135deg, #f0f0f3 0%, #e9e9e9 100%);
+  height:100%;
+  width:100%;
+  border-radius:1em;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  transform-style:preserve-3d;
+  color: rgb(9, 145, 70);
+  perspective: 1000px;
+  box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+}
+
+
+.back{
+  transform: rotateY( 180deg );
+}
+
+.front > p , .back > p {
+  transform:translateZ(120px);
+}
+
+.card:hover{
+  transform:rotateY(180deg);
+} */
+
+
+
+
+
+
+
+
+
+
+.card {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.front {
+  border: 2px solid black;
+  
+}
+
+.front:hover {
+  bottom: 2px;
+  left: 2px;
+  box-shadow: 0px 0px 20px 1px #000;
+}
+
+.back {
+  border: 2px solid black;
+  transform: rotateY(180deg);
+}
+
+.back:hover {
+  bottom: 2px;
+  right: 2px;
+  box-shadow: 0px 0px 20px 1px #000;
+}
